@@ -1,9 +1,10 @@
+#!/usr/bin/env python3
 """
 Bump the containerhive dependency version and tag the release.
 
 Usage:
-    python scripts/bump-version.py 0.14.0
-    python scripts/bump-version.py v0.14.0
+    ./scripts/bump-version.py 0.14.0
+    ./scripts/bump-version.py v0.14.0
 """
 
 import re
