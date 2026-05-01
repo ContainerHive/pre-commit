@@ -18,12 +18,29 @@ Add this to your `.pre-commit-config.yaml`:
 
 ### Hooks available
 
-#### `generate`
-Generate templates for ContainerHive projects. Runs `ch generate`.
-
-#### `verify`
-Verify ContainerHive project structure. Runs `ch verify`.
-
 #### `run`
-Run an arbitrary ContainerHive command. By default runs `ch` with no
-subcommand. Pass arguments to ch via `args`.
+Run an arbitrary ContainerHive command. Use the `args` key to pass any
+subcommand and arguments to `ch`. This hook has no default subcommand.
+
+Examples:
+
+```yaml
+-   repo: https://github.com/containerhive/pre-commit.git
+    rev: v0.1.0
+    hooks:
+    # Run ch generate
+    -   id: run
+        args: [generate]
+
+    # Run ch verify
+    -   id: run
+        args: [verify]
+
+    # Run ch generate --output ./custom-dir
+    -   id: run
+        args: [generate, --output, ./custom-dir]
+
+    # Run ch verify --strict
+    -   id: run
+        args: [verify, --strict]
+```
