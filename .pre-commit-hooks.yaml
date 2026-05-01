@@ -1,5 +1,0 @@
-hooks:
-  - id: containerhive
-    name: ContainerHive
-    entry: ch
-    language: python
