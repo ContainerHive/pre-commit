@@ -1,7 +1,7 @@
-- id: generate
+- id: template
   name: Generate templates for ContainerHive
   entry: ch
-  args: [generate]
+  args: [template]
   language: python
   pass_filenames: false
 - id: verify
