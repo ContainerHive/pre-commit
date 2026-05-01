@@ -1,0 +1,17 @@
+- id: generate
+  name: Generate templates for ContainerHive
+  entry: ch
+  args: [generate]
+  language: python
+  pass_filenames: false
+- id: verify
+  name: Verify ContainerHive project structure
+  entry: ch
+  args: [verify]
+  language: python
+  pass_filenames: false
+- id: run
+  name: Run ContainerHive command
+  entry: ch
+  language: python
+  pass_filenames: false
