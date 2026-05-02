@@ -1,9 +1,9 @@
 [project]
 name = "containerhive-pre-commit"
-version = "0.14.0"
+version = "0.15.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "containerhive==0.14.0"
+    "containerhive==0.15.0"
 ]
